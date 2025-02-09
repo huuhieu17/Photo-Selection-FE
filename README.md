@@ -34,7 +34,7 @@ npm start
 - Tải toàn bộ ảnh lên thư mục album va chia se.
 
 ### 2. Khách Hàng
-- Đăng nhập và truy cập album cá nhân.
+- Truy cập được dẫn thợ share
 - Xem ảnh đã được tải lên.
 - Chọn những ảnh mong muốn chỉnh sửa.
 
