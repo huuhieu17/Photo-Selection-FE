@@ -9,6 +9,8 @@ import SignIn from "./components/Authentication/SignIn";
 import SignUp from "./components/Authentication/SignUp";
 import { AuthProvider } from "./contexts/authenticateContext";
 import DefaultLayout from "./layout/DefaultLayout";
+import Privacy from "./components/Privacy/Privacy";
+import Terms from "./components/Terms/Terms";
 
 const App = () => (
   <AuthProvider>
@@ -17,6 +19,8 @@ const App = () => (
       <DefaultLayout>
         <Routes>
           <Route path="/" element={<List />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/terms" element={<Terms />} />
           <Route path="/login" element={<SignIn />} />
           <Route path="/register" element={<SignUp />} />
           <Route path="/create-album" element={<AlbumCreation />} />
