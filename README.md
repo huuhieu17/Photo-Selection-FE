@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# Photo Selection App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Giới Thiệu
+Ứng dụng **Photo Selection App** giúp khách hàng lựa chọn ảnh sau khi thợ chụp ảnh đã tải lên. Khi khách hàng đặt lịch chụp ảnh, nhiếp ảnh gia sẽ upload toàn bộ ảnh lên một thư mục, và khách hàng có thể chọn những bức ảnh họ muốn chỉnh sửa.
 
-## Available Scripts
+## Tính Năng Chính
+- **Tải ảnh lên**: Thợ chụp ảnh có thể tải lên tất cả ảnh của khách hàng vào một thư mục riêng.
+- **Xem ảnh**: Khách hàng có thể xem toàn bộ ảnh từ album của mình.
+- **Chọn ảnh để chỉnh sửa**: Khách hàng có thể chọn một hoặc nhiều ảnh để gửi yêu cầu chỉnh sửa.
+- **Xem thông tin album**: Hiển thị thông tin như tên album, ngày tạo.
+- **Hỗ trợ xem ảnh toàn màn hình**: Sử dụng thư viện `react-photo-view` để khách hàng có thể xem ảnh chi tiết.
 
-In the project directory, you can run:
+## Công Nghệ Sử Dụng
+- **Frontend**: React, TailwindCSS
+- **Thư viện hỗ trợ**: `react-photo-view`, `react-router-dom`
+- **Backend API**: Kết nối API để lấy danh sách ảnh từ thư mục của album.
+- **Database**: Lưu thông tin album và ảnh trên hệ thống.
 
-### `npm start`
+## Cách Cài Đặt và Chạy Dự Án
+### 1. Cài đặt dependencies
+```sh
+npm install
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 2. Chạy ứng dụng
+```sh
+npm start
+```
+Ứng dụng sẽ chạy tại `http://localhost:3000`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Hướng Dẫn Sử Dụng
+### 1. Thợ Chụp Ảnh
+- Đăng nhập vào hệ thống.
+- Tải toàn bộ ảnh lên thư mục album va chia se.
 
-### `npm test`
+### 2. Khách Hàng
+- Đăng nhập và truy cập album cá nhân.
+- Xem ảnh đã được tải lên.
+- Chọn những ảnh mong muốn chỉnh sửa.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Đóng Góp
+Nếu bạn muốn đóng góp cho dự án, vui lòng fork repo và tạo pull request.
 
-### `npm run build`
+## Liên Hệ
+Nếu bạn có bất kỳ câu hỏi hoặc góp ý nào, vui lòng liên hệ qua email: **huuhieu1711@gmail.com**.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
