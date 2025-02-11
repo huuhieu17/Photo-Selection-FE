@@ -1,6 +1,7 @@
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 import { useParams } from 'react-router-dom';
 import 'react-photo-view/dist/react-photo-view.css';
+import CopyURLButton from '../CopyURLButton/CopyButton';
 
 const { useState, useEffect } = require('react');
 const { getPhotoAlbum, getAlbum } = require('../../api/api');
@@ -88,7 +89,12 @@ function ViewAlbum() {
             <textarea rows={20} className='block w-full border mt-2 p-2'
                 value={selectedImages.join(', ')}
             ></textarea>
+            <div className='mt-2'>
+              <b>Chia sẻ album:</b><br/>
+              <CopyURLButton/>
+            </div>
           </div>
+  
         </ul>
       </div>
     </div>

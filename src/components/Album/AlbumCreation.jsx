@@ -108,7 +108,7 @@ function CreateAlbum() {
               // </option>
             ))}
           </div>
-          <button type="button" className="mt-10 " onClick={handleCreateAlbum}>
+          <button type="button" className="mt-10 border rounded px-4 py-2" onClick={handleCreateAlbum}>
             Tạo Album
           </button>
         </form>
